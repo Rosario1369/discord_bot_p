@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === 'test');
+  const channel = member.guild.channels.find(ch => ch.name === 'welcome');
   if (!channel) return;
   channel.send(`Welcome to the server, ${member} to gain access to the rest of the server, type +roles.`);
 });
